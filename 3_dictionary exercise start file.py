@@ -76,7 +76,7 @@ def deal_cards(deck, number):
         # print(card)
         # hand_value +=value
 
-     # ALTERNATE METHOD AS POPITEM() DOESNT WORK
+     # ALTERNATE METHOD AS POPITEM() DOESNT WORK ,
      for count in range(number):
         card =random.choice(list(deck))
         value=deck[card] 
