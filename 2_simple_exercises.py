@@ -12,6 +12,8 @@ sampleDict = {
       }
    }
 }
+print("***ANS 1****")
+print (sampleDict['class']['student']['marks']['history'])
 
 
 
@@ -20,8 +22,12 @@ sampleDict = {
 
 dict={"son's name": "Lucas", "son's eyes": "green", "son's height": 32, "son's weight": 25}
 
+print("***ANS 2****")
 
-
+a={ "son's height" : 34}
+#dict.update(a)
+dict["son's height"] += 2
+print (dict)
 
 
 # 3) Given a Python dictionary, Change Brad’s salary to 8500
@@ -33,6 +39,13 @@ sampleDict = {
 }
 
 
+print("***ANS 3****")
+
+a=sampleDict['emp3']['salary'] ='8500'
+print(sampleDict)
+
+#sampleDict.update(a)
+
 
 
 
@@ -41,5 +54,10 @@ sampleDict = {
 #       "work": ["Apology", "Phaedo", "Republic", "Symposium"]
 
 dict={"name": "Plato", "country": "Ancient Greece", "born": -427, "teacher": "Socrates", "student": "Aristotle"}
+
+print("***ANS 4****")
+
+dict["work"]=["Apology", "Phaedo", "Republic", "Symposium"]
+print(dict)
 
 
