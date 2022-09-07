@@ -47,9 +47,6 @@ print(sampleDict)
 #sampleDict.update(a)
 
 
-
-
-
 # 4 )Given the dictionary below, add a new key - 'work' with the values shown below:
 #       "work": ["Apology", "Phaedo", "Republic", "Symposium"]
 
