@@ -47,3 +47,38 @@ datastore = { "medical":[
 
       ]
 }
+
+outfile = open ('retail_space.csv','w')
+outfile.write('room-number,use,sq-ft,price \n')
+
+#print(type(datastore["medical"]))  --list 
+
+for x in datastore["medical"]:  #x is a dict
+  #print(x["room-number"])
+  outfile.write(
+    str(x["room-number"])
+    +","
+    +x["use"]
+    +","
+    +str(x["sq-ft"])
+    +","
+    +str(x["price"])
+    +"\n"
+  )
+outfile.close()
+
+# number =len(datastore["medical"])
+# #print(number)
+# print("room-number,use,sq-ft,price \n")
+# for count in range(number): 
+#   print(datastore["medical"][count])
+
+
+import pickle
+
+pickle_file = open("datastore_dict","wb")
+pickle.dump(datastore,pickle_file)
+
+
+
+  
