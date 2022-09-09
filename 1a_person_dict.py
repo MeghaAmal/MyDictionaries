@@ -8,16 +8,30 @@ person["pets"] = {"dog": "Fido", "cat": "Sox"}
 
 # print(person)
 
+print(person)
+
 # print(type(person["children"]))
 
+print(type(person["children"]))
+
 # print (type(person["pets"]))
+print (type(person["pets"]))
 
 # print child - "Betty"
 
+print(person["children"][1])
+
 # print the pet name of the cat
 
+print(person["pets"]["cat"])
 
 # use a for loop to print out all the children
 
+for i in person["children"]:
+    print(i)
 
 # use a for loop to print out the type of pet and name of pet
+print("PetType - Name")
+for key,value in person["pets"].items():
+    
+    print(key," - ",value)
