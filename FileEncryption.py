@@ -9,7 +9,6 @@ code_encrypt_dictionary = { "A":"2",
                             "z":"0"
                          }
 
-#print(code_encrypt_dictionary)
 #opening info security file, reads and stores its contents and closes the file
 info_security_file = open("info_security.txt","r")
 info_file_read = info_security_file.read()    
@@ -23,8 +22,8 @@ info_file_encrpyt = open ("encrypted.txt","w")
 for i in info_file_read:
     if i in code_encrypt_dictionary:
         info_file_encrpyt.write(code_encrypt_dictionary[i])
-    elif  i == '.' or i == ',' or i == '!': 
-         info_file_encrpyt.write(i)
+    # elif  i == '.' or i == ',' or i == '!': 
+    #      info_file_encrpyt.write(i)
     else:
         info_file_encrpyt.write(i)
 
