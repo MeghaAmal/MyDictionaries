@@ -55,6 +55,7 @@ outfile.write('room-number,use,sq-ft,price \n')
 
 for x in datastore["medical"]:  #x is a dict
   #print(x["room-number"])
+  #print(x)
   outfile.write(
     str(x["room-number"])
     +","

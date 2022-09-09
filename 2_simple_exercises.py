@@ -24,7 +24,7 @@ dict={"son's name": "Lucas", "son's eyes": "green", "son's height": 32, "son's w
 
 print("***ANS 2****")
 
-a={ "son's height" : 34}
+#a={ "son's height" : 34}
 #dict.update(a)
 dict["son's height"] += 2
 print (dict)
@@ -41,7 +41,7 @@ sampleDict = {
 
 print("***ANS 3****")
 
-a=sampleDict['emp3']['salary'] ='8500'
+sampleDict['emp3']['salary'] ='8500'
 print(sampleDict)
 
 #sampleDict.update(a)

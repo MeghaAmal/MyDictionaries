@@ -1,8 +1,9 @@
+
 phonebook = {'Chris':'555−1111',
              'Katie':'555−2222',
              'Joanne':'555−3333'}
 
-"""
+'''
 print()
 print('*****  start section 1 - print dictionary ********')
 print()
@@ -18,6 +19,7 @@ print(mydictionary)
 chris_phone = phonebook["Chris"]
 print(chris_phone)
 
+print(phonebook.items())
 
 
 print()
@@ -49,8 +51,6 @@ else:
 print()
 print('*****  end section 2 ********')
 print()
-
-
 
 
 
@@ -102,15 +102,17 @@ print('*****  start section 5 - iterate through keys ********')
 print()
 
 
+for k in phonebook:
+    print(k)
+    print(phonebook[k])
+# print(phonebook.keys())
 
 
 print()
 print('*****  end section 5 ********')
 print()
 
-for k in phonebook:
-    print(k)
-    print(phonebook[k])
+
 
 
 
@@ -123,6 +125,9 @@ print()
 
 for v in phonebook.values():
     print("254"+v)
+
+# for v in phonebook.values():
+#     print("254-"+v)
 
 
 print()
@@ -153,24 +158,37 @@ for key,value in enumerate(phonebook):
     print(key)
     print(value)
 
+# for v in enumerate(phonebook):
+#     print(v)
+
 
 
 print()
 print('*****  end section 7 ********')
 print()
 
-"""
 
 
-'''
+
+
 print()
 print('*****  start section 8 - using random and converting to list ********')
 print()
 
 
-phone = phonebook.get('Chri','key not found')
+phone = phonebook.get('Chris','key not found')
 print(phone)
+phone2=phonebook.get("Mary",'key not found')
+print(phone2)
 
+# def get_key(val):
+
+#     for key,value in phonebook.items():
+#         if value ==val:
+#             return key
+#         else:
+#             return "key no found"
+# print(get_key('555−1171'))
 #pop method
 remove = phonebook.pop('Chris','not found')
 print(remove)
@@ -188,8 +206,8 @@ print(phonebook)
 print()
 print('*****  end section 8 ********')
 print()
-'''
 
+'''
 #random we can do for list not for didctionary. we need to convert the key of dict becomes a list to view its functionality
 import random
 
@@ -201,6 +219,7 @@ print(phonebook[random_key])
 
 #1shot
 print(phonebook[random.choice(list(phonebook))])
+
 
 
 
