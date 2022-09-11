@@ -22,8 +22,6 @@ info_file_encrpyt = open ("encrypted.txt","w")
 for i in info_file_read:
     if i in code_encrypt_dictionary:
         info_file_encrpyt.write(code_encrypt_dictionary[i])
-    # elif  i == '.' or i == ',' or i == '!': 
-    #      info_file_encrpyt.write(i)
     else:
         info_file_encrpyt.write(i)
 
